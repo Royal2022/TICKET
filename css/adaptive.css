@@ -1,0 +1,90 @@
+
+@media all and (max-width: 1160px) {
+
+
+
+
+    .newest_movie_content{
+        display: flex;
+        overflow-x: scroll;
+        flex-wrap: nowrap;
+
+    }
+    .newest_movie_content::-webkit-scrollbar{
+        width: 0;
+    }
+
+    .box_mini_and_info{
+        margin-right: 20px;
+    }
+
+
+    .box_movie_info, .box_mini_and_info{
+        zoom: 1.4;
+    }
+
+
+
+
+
+
+
+    .all_movies_content{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+    .you_may_also_like_content{
+        display: flex;
+        flex-flow: column;
+    }
+
+    .box_content_left, .box_content_right,.box_content_center{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .mini_content_box{
+        width: 90%;
+    }
+    .big_content_box{
+        margin-bottom: 40px;
+    }
+    .button{
+        zoom: 1.4;
+    }
+
+
+    .mini_content_box:nth-child(2){
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

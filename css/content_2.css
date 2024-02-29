@@ -1,0 +1,96 @@
+
+.all_movies_content{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+    flex-wrap: wrap;
+}
+
+.box_movie_info{
+    display: flex;
+    justify-content: space-between;
+    width: 550px;
+    margin-bottom: 55px;
+    position: relative;
+}
+
+.right_movie_info{
+    /*
+    width: 316px;
+    */
+    margin-left: 15px;
+    text-align: justify;
+}
+
+.box_name_info{
+    font-family: 'Arimo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 23px;
+    color: #000000;
+}
+.box_time_info{
+    font-family: 'Short Stack';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #FE7900;
+    margin: 15px 0 10px 0;
+    display: flex;
+    align-items: center;
+
+}
+.box_time_info img{
+    width: 17px;
+    height: 17px;
+    margin-right: 5px;
+}
+
+
+.box_all_info p{
+    font-family: 'SeoulNamsan';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: black;
+}
+
+.box_all_info_color{
+    color: rgba(0, 0, 0, 0.6);
+}
+
+
+.box_fog{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(254, 121, 0, 0.5);
+    width: 262px;
+    height: 100%;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    animation: animation_fog 0.4s ease-in-out;
+}
+
+
+
+
+.rating_movie_big{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 10px;
+    top: 315px;
+}
+
+.images_box_big{
+    width: 262px;
+    height: 364px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+
+

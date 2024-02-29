@@ -1,0 +1,250 @@
+@import "content_header.css";
+@import "content_1.css";
+@import "content_2.css";
+@import "content_3.css";
+@import "footer.css";
+@import "adaptive.css";
+
+
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../css/fonts/Inter/static/Inter-Regular.ttf');
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('../css/fonts/Roboto/Roboto-Regular.ttf');
+}
+@font-face {
+    font-family: 'Short Stack';
+    src: url('../css/fonts/Short_Stack/ShortStack-Regular.ttf');
+}
+@font-face {
+    font-family: 'SeoulNamsan';
+    src: url('../css/fonts/SeoulNamsan-CL/seoulnamsancondensed/SeoulNamsanCondensed-Black.ttf');
+}
+@font-face {
+    font-family: 'Arimo';
+    src: url('../css/fonts/Arimo/static/Arimo-Regular.ttf');
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.content{
+    width: 65%;
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.right_menu{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.right_menu a{
+    text-decoration: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    color: #000000;
+}
+
+
+
+
+
+
+.rating_movie, .rating_movie_big{
+    border-radius: 50%;
+    background: rgba(254, 121, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+
+/*============ STARS ============*/
+
+
+.rating{
+    margin-top: 30px;
+    cursor: pointer;
+    user-select: none;
+}
+.rating input {
+    display: none;
+}
+
+.rating label {
+    background-image: url("../css/images/stars.png");
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    transition: 500ms;
+    cursor: pointer;
+}
+
+.rating input:checked ~ label{
+    background-image: url("../css/images/empty_stars.png");
+}
+
+
+
+.black_fon{
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.right_menu a{
+    cursor: pointer;
+}
+.right_menu a:hover{
+    cursor: pointer;
+    border-bottom: 2px solid #FE7900;
+}
+
+/*============ advertisement ============*/
+
+
+.advertisement{
+    margin-top: 100px;
+    width: 100%;
+}
+
+
+/*================ animation fog ==============*/
+@keyframes animation_fog {
+    0% {
+        opacity: 0;
+    }
+    1% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+/*================ animation button scroll up ==============*/
+
+.arrow_up{
+    position: fixed;
+    z-index: 1000;
+    right: 330px;
+    bottom: 50px;
+    display: none;
+    width: 50px;
+    height: 60px;
+    cursor: pointer;
+    background-size: contain;
+    transition: 1s;
+}
+.arrow_up:hover{
+    animation: arrow-up-anim 0.6s linear infinite;
+}
+
+@keyframes arrow-up-anim {
+    0% {
+        bottom: 50px;
+    }
+    50% {
+        bottom: 55px;
+    }
+    100% {
+        bottom: 50px;
+    }
+}
+
+
+/*================ scroll view ==============*/
+
+body::-webkit-scrollbar {
+    width: 8px;
+}
+body::-webkit-scrollbar-track {
+    background: none;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: #FE7900;
+    border-radius: 20px;
+}
+
+
+
+
+/*================ media queries ==============*/
+
+@media all and (max-width: 1715px) {
+    .content {
+        width: 75%;
+    }
+    .arrow_up{
+        right: 205px;
+    }
+}
+@media all and (max-width: 1591px) {
+    .content {
+        width: 80%;
+    }
+    .arrow_up{
+        right: 156px;
+    }
+}
+@media all and (max-width: 1463px) {
+    .content {
+        width: 85%;
+    }
+    .arrow_up{
+        right: 100px;
+    }
+}@media all and (max-width: 1367px) {
+    .content {
+        width: 90%;
+    }
+    .arrow_up{
+        right: 94px;
+    }
+}
+@media all and (max-width: 1287px) {
+    .content {
+        width: 95%;
+    }
+    .arrow_up{
+        right: 80px;
+    }
+}
+

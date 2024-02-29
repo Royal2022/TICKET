@@ -1,0 +1,35 @@
+.newest_movie{
+    width: 100%;
+}
+.newest_movie_header, .all_movies_header, .you_may_also_like_header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 130px;
+}
+.newest_movie_header p, .all_movies_header p, .you_may_also_like_header p{
+    padding-left: 35px;
+    padding-right: 35px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 42px;
+
+    color: #000000;
+}
+.orange_text{
+    color: #FE7900;
+}
+.line{
+    border-bottom: 1px solid black;
+    width: 50%;
+}
+
+
+.newest_movie_content{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+    flex-wrap: wrap;
+}
